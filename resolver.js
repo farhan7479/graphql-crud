@@ -1,4 +1,4 @@
-// userResolvers.js
+
 import { getUsers, createUser, deleteUser } from './controllers/userController.js';
 
 const resolvers = {
