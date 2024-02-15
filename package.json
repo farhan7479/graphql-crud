@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "build": "npm i",
-    "dev": "concurrently \"npm start\" \"curl --request POST --header 'content-type: application/json' --url 'https://grapql-crud-operation.onrender.com/graphql' --data '{\"query\":\"query { __typename }\"}'\""
+    "dev": "pm2 start index.js && curl --request POST --header 'content-type: application/json' --url 'https://grapql-crud-operation.onrender.com/graphql' --data '{\"query\":\"query { __typename }\"}'"
 
   },
   "keywords": [],
@@ -23,6 +23,6 @@
     "graphql": "^16.8.1",
     "mongoose": "^8.1.2",
     "nodemon": "^3.0.3",
-    "concurrently": "^7.0.0"
+    
   }
 }
