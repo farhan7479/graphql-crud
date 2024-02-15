@@ -7,9 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build" : "npm i"
-    
+    "build": "npm i",
+    "query-graphql": "curl --request POST --header 'content-type: application/json' --url 'https://grapql-crud-operation.onrender.com/graphql' --data '{\"query\":\"query { __typename }\"}'"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
