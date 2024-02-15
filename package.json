@@ -9,6 +9,7 @@
     "start": "node index.js",
     "build": "npm i",
     "dev": "concurrently \"npm start\" \"curl --request POST --header 'content-type: application/json' --url 'https://grapql-crud-operation.onrender.com/graphql' --data '{\"query\":\"query { __typename }\"}'\""
+
   },
   "keywords": [],
   "author": "",
